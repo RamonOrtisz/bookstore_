@@ -22,11 +22,16 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar arquivos de configuração do Poetry
-WORKDIR /app
 COPY poetry.lock pyproject.toml ./
 
 # Instalar dependências do Poetry (runtime)
 RUN poetry install --no-dev
+
+# quicker install as runtime deps are already installed
+RUN poetry install
+RUN pip install psycopg2
+
+WORKDIR /app
 
 # Copiar código-fonte do projeto
 COPY . .
