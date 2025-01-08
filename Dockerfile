@@ -1,7 +1,7 @@
 # Usar uma imagem Python Slim para otimização de espaço
 FROM python:3.12-slim AS python-base
 
-# Variáveis de ambiente
+## Variáveis de ambiente
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_NO_CACHE_DIR=off \
