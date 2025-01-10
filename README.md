@@ -2,8 +2,6 @@
 BookStore APP
 <<<<<<< HEAD
 =======
-
-
 Módulo 14
 
 1- Declarei os modelos no admin.py de cada aplicativo
