@@ -8,4 +8,8 @@ class CategoryViewSet(ModelViewSet):
     serializer_class = CategorySerializer
 
     def get_queryset(self):
+<<<<<<< HEAD
         return Category.objects.all().order_by("id")
+=======
+        return Category.objects.all().order_by('id')
+>>>>>>> 3e23122 (dcoker-networks)
