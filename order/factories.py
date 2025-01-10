@@ -1,9 +1,16 @@
 import factory
+<<<<<<< HEAD
 
 from django.contrib.auth.models import User
 from product.factories import ProductFactory
 
 from order.models import Order
+=======
+from django.contrib.auth.models import User
+
+from order.models import Order
+from product.factories import ProductFactory
+>>>>>>> 3e23122 (dcoker-networks)
 
 
 class UserFactory(factory.django.DjangoModelFactory):
@@ -27,4 +34,8 @@ class OrderFactory(factory.django.DjangoModelFactory):
                 self.product.add(product)
 
     class Meta:
+<<<<<<< HEAD
         model = Order
+=======
+        model = Order
+>>>>>>> 3e23122 (dcoker-networks)

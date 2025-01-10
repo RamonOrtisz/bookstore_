@@ -1,7 +1,11 @@
 import factory
 
+<<<<<<< HEAD
 from .models.product import Product
 from .models.category import Category
+=======
+from product.models import Category, Product
+>>>>>>> 3e23122 (dcoker-networks)
 
 
 class CategoryFactory(factory.django.DjangoModelFactory):
@@ -29,4 +33,8 @@ class ProductFactory(factory.django.DjangoModelFactory):
                 self.category.add(category)
 
     class Meta:
+<<<<<<< HEAD
         model = Product
+=======
+        model = Product
+>>>>>>> 3e23122 (dcoker-networks)

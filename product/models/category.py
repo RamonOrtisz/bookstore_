@@ -8,4 +8,8 @@ class Category(models.Model):
     active = models.BooleanField(default=True)
 
     def __unicode__(self):
+<<<<<<< HEAD
         return self.title
+=======
+        return self.title
+>>>>>>> 3e23122 (dcoker-networks)
